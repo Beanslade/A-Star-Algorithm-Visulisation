@@ -42,10 +42,10 @@ class Node:
 		return self.colour == BLACK
 
 	def is_start(self):
-		return self.colour == YELLOW
+		return self.colour == ORANGE
 
 	def is_end(self):
-		return self.colour == TURQUOISE
+		return self.colour == PURPLE
 
 	def reset(self):
 		self.colour = WHITE
@@ -60,13 +60,13 @@ class Node:
 		self.colour = BLACK
 
 	def make_start(self):
-		self.colour = YELLOW
+		self.colour = ORANGE
 
 	def make_end(self):
-		self.colour = TURQUOISE
+		self.colour = PURPLE
 
 	def make_path(self):
-		self.colour = PURPLE
+		self.colour = TURQUOISE
 
 	def draw(self, window):
 		pygame.draw.rect(window, self.colour,(self.x, self.y, self.width, self.width))
